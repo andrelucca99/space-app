@@ -39,8 +39,8 @@ const BarraLateral = () => {
             Novas
           </ItemNabegacao>
           <ItemNabegacao
-            iconAtivo="/icones/supreenda-me-ativo.png"
-            iconeInativo="/icones/supreenda-me-inativo.png"
+            iconAtivo="/icones/surpreenda-me-ativo.png"
+            iconeInativo="/icones/surpreenda-me-inativo.png"
           >
             Supreenda-me
           </ItemNabegacao>
