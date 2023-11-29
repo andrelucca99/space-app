@@ -9,7 +9,6 @@ const FigureStyled = styled.figure`
     min-height: 328px;
     margin: 0;
     border-radius: 20px;
-    width: 1156px;
     max-width: 100%;
 `;
 

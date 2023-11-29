@@ -18,6 +18,7 @@ const CampoStyled = styled.input`
   font-weight: 400;
   font-size: 20px;
   line-break: 20px;
+  padding-left: 10px;
 `;
 
 const IconeLupa = styled.img`
