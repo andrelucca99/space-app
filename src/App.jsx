@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import BarraLateral from "./components/BarraLateral";
 import Banner from "./components/Bannner";
 import bgBanner from "./assets/banner.png";
+import Galeria from "./components/Galeria";
 
 const FundoGradiente = styled.div`
   background: linear-gradient(174.61deg, #041833 4.16%, #04244F 48%, #154582 96.76%);
@@ -41,7 +42,7 @@ function App() {
               texto={'A galeria mais completa de fotos do espaço!'}
               bgImage={bgBanner}
             />
-            <h1>galeria</h1>
+            <Galeria />
           </ConteudoGaleria>
         </MainContainer>
       </AppContainer>
