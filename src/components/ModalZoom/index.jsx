@@ -1,25 +1,28 @@
 import { styled } from "styled-components";
-import Imagem from "../Galeria/Imagem";
+
 import BotaoIcon from "../BotaoIcon";
+import Imagem from "../Galeria/Imagem";
 
 const Overlay = styled.div`
-  background-color: rgba(0, 0, 0, 0.7);
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
 `;
 
 const DialogStyled = styled.dialog`
   position: absolute;
-  top: 294px;
-  background-color: transparent;
-  width: 1156px;
-  border: 0;
-  padding: 0;
   display: flex;
   justify-content: center;
+
+  width: 1156px;
+  padding: 0;
+  border: 0;
+  top: 294px;
+
+  background-color: transparent;
   form {
     button {
       position: relative;

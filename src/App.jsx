@@ -1,25 +1,28 @@
-import { styled } from "styled-components";
-import EstilosGlobais from "./components/EstilosGlobais";
-import Header from "./components/Header";
-import BarraLateral from "./components/BarraLateral";
-import Banner from "./components/Bannner";
 import { useEffect, useState } from "react";
-import bgBanner from "./assets/banner.png";
-import Galeria from "./components/Galeria";
+
+import { styled } from "styled-components";
+
 import fotos from "./fotos.json";
-import ModalZoom from "./components/ModalZoom";
+import bgBanner from "./assets/banner.png";
+
+import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Banner from "./components/Bannner";
+import Galeria from "./components/Galeria";
+import ModalZoom from "./components/ModalZoom";
+import BarraLateral from "./components/BarraLateral";
+import EstilosGlobais from "./components/EstilosGlobais";
 
 const FundoGradiente = styled.div`
-  background: linear-gradient(174.61deg, #041833 4.16%, #04244F 48%, #154582 96.76%);
   width: 100%;
   min-height: 100vh;
+  background: linear-gradient(174.61deg, #041833 4.16%, #04244F 48%, #154582 96.76%);
 `;
 
 const AppContainer = styled.div`
   width: 1140px;
-  margin: 0 auto;
   max-width: 100%;
+  margin: 0 auto;
 `;
 
 const MainContainer = styled.main`
@@ -34,11 +37,10 @@ const ConteudoGaleria = styled.section`
 `;
 
 const App = () => {
-  const [fotosDaGaleria, setFotosDaGaleria] = useState(fotos);
-  // const [fotoSelecionada, setFotoSelecionada] = useState(null);
-  const [filtro, setFiltro] = useState('');
   const [tag, setTag] = useState(0);
+  const [filtro, setFiltro] = useState('');
   const [fotoComZoom, setFotoComZoom] = useState(null);
+  const [fotosDaGaleria, setFotosDaGaleria] = useState(fotos);
 
   useEffect(() => {
     const fotosFiltradas = fotos.filter(foto => {
@@ -49,22 +51,6 @@ const App = () => {
     setFotosDaGaleria(fotosFiltradas);
   }, [filtro, tag]);
 
-  // const aoAltenarFavorito = (foto) => {
-  //   if (foto.id === fotoSelecionada?.id) {
-  //     setFotoSelecionada({
-  //       ...fotoSelecionada,
-  //       favorita: !fotoSelecionada.favorita
-  //     })
-  //   }
-
-  //   setFotosDaGaleria(fotosDaGaleria.map(fotoGaleria => {
-  //     return {
-  //       ...fotoGaleria,
-  //       favorita: fotoGaleria.id === foto.id ? !foto.favorita : fotoGaleria.favorita
-  //     }
-  //   }))
-  // }
-
   const aoAltenarFavorito = (foto) => {
     if (foto.id === fotoComZoom?.id) {
       setFotoComZoom({
@@ -72,7 +58,6 @@ const App = () => {
         favorita: !fotoComZoom.favorita
       })
     }
-
     setFotosDaGaleria(fotosDaGaleria.map(fotoDaGaleria => {
       return {
         ...fotoDaGaleria,
@@ -92,21 +77,19 @@ const App = () => {
           <BarraLateral />
           <ConteudoGaleria>
             <Banner
-              texto={'A galeria mais completa de fotos do espaço!'}
               bgImage={bgBanner}
+              texto={'A galeria mais completa de fotos do espaço!'}
             />
             <Galeria
-              aoFotoSelecionada={foto => setFotoSelecionada(foto)}
-              aoAltenarFavorito={aoAltenarFavorito}
-              fotos={fotosDaGaleria}
               setTag={setTag}
+              fotos={fotosDaGaleria}
+              aoAltenarFavorito={aoAltenarFavorito}
+              aoFotoSelecionada={foto => setFotoSelecionada(foto)}
             />
           </ConteudoGaleria>
         </MainContainer>
       </AppContainer>
       <ModalZoom
-        // foto={fotoSelecionada}
-        // aoFechar={() => setFotoSelecionada(null)}
         foto={fotoComZoom}
         aoFechar={() => setFotoComZoom(null)}
         aoAltenarFavorito={aoAltenarFavorito}

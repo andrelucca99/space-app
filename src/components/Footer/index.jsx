@@ -2,14 +2,15 @@ import { styled } from "styled-components";
 import BotaoIcon from "../BotaoIcon";
 
 const FooterStyled = styled.footer`
-  max-width: 100%;
-  height: 80px;
-  background-color: #04244f;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 20px;
+
+  max-width: 100%;
+  height: 80px;
   padding: 0 20px;
+  background-color: #04244f;
+  margin-top: 20px;
 `;
 
 const SociaisStyled = styled.div`

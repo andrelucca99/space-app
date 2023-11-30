@@ -9,16 +9,16 @@ const ContainerStyled = styled.div`
 const CampoStyled = styled.input`
   width: 566px;
   height: 56px;
+  padding-left: 10px;
   border-radius: 10px;
   border: 2px solid #C98CF1;
-  padding: 12px, 16px;
   background: transparent;
   box-sizing: border-box;
+
   color: #D9D9D9;
   font-weight: 400;
   font-size: 20px;
   line-break: 20px;
-  padding-left: 10px;
 `;
 
 const IconeLupa = styled.img`

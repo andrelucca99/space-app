@@ -17,20 +17,20 @@ const TagTitulo = styled.h3`
 
 const TagStyled = styled.div`
   display: flex;
-  gap: 24px;
   justify-content: end;
+  gap: 24px;
 `;
 
 const TagButton = styled.button`
-    font-size: 24px;
-    color: #FFF;
-    background: rgba(217, 217, 217, 0.3);
+    padding: 12px;
+    border: 2px solid transparent;
     border-radius: 10px;
     cursor: pointer;
+    color: #FFF;
+    font-size: 24px;
+    background: rgba(217, 217, 217, 0.3);
     transition: background-color 0.3s ease;
-    padding: 12px;
     box-sizing: border-box;
-    border: 2px solid transparent;
     &:hover {
       border-color: #C98CF1;
     }

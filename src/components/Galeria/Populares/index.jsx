@@ -15,15 +15,15 @@ const Imagem = styled.img`
 `;
 
 const Botao = styled.button`
-  background-color: transparent;
-  color: #fff;
-  border: 2px solid #C98CF1;
+  width: 100%;
   padding: 12px 20px;
-  font-size: 20px;
+  margin-top: 16px;
+  border: 2px solid #C98CF1;
   border-radius: 10px;
   cursor: pointer;
-  width: 100%;
-  margin-top: 16px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 20px;
 `;
 
 const Populares = () => {

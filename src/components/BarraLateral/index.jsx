@@ -2,10 +2,10 @@ import { styled } from "styled-components";
 import ItemNabegacao from "./ItemNavegacao";
 
 const ListaStyled = styled.ul`
-  list-style: none;
+  width: 212px;
   padding: 0;
   margin: 0;
-  width: 212px;
+  list-style: none;
 `;
 
 const BarraLateral = () => {

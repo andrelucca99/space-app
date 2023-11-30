@@ -1,8 +1,9 @@
 import { styled } from "styled-components";
-import Titulo from "../Titulo";
-import Populares from "./Populares";
+
 import Tags from "./Tags";
 import Imagem from "./Imagem";
+import Titulo from "../Titulo";
+import Populares from "./Populares";
 
 const GaleriaContainer = styled.div`
   display: flex;
@@ -15,8 +16,8 @@ const SecaoFluida = styled.section`
 
 const ImagensContainer = styled.section`
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
+  justify-content: space-around;
   gap: 24px;
 `;
 

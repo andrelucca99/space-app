@@ -1,15 +1,17 @@
 import { styled } from "styled-components";
 
 const FigureStyled = styled.figure`
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+
+  max-width: 100%;
+  min-height: 328px;
+  margin: 0;
+
   background-image: ${props => `url(${props.$bgImage})`};
-    flex-grow: 1;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    min-height: 328px;
-    margin: 0;
-    border-radius: 20px;
-    max-width: 100%;
+  background-repeat: no-repeat;
+  border-radius: 20px;
 `;
 
 const TituloStyled = styled.h1`

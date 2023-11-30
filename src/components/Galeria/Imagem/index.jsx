@@ -2,11 +2,12 @@ import { styled } from "styled-components";
 import BotaoIcon from "../../BotaoIcon";
 
 const Figure = styled.figure`
+  display: flex;
+  flex-direction: column;
+
   width: ${props => props.$expandida ? '90%' : '300px'};
   max-width: 100%;
   margin: 0;
-  display: flex;
-  flex-direction: column;
   & > img {
     max-width: 100%;
     border-radius: 20px 20px 0 0;
@@ -14,8 +15,8 @@ const Figure = styled.figure`
   figcaption {
     background-color: #001364;
     border-radius: 0 0 20px 20px;
-    color: #fff;
     box-sizing: border-box;
+    color: #fff;
     padding: 12px;
     h3 {
       font-family: 'GandhiSansBold';
