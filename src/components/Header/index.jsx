@@ -10,11 +10,11 @@ const HeaderStyled = styled.header`
   }
 `
 
-const Header = () => {
+const Header = ({ setFiltro }) => {
   return (
     <HeaderStyled>
       <img src="/imagens/logo.png" alt="Logo da Space App" />
-      <CampoTexto />
+      <CampoTexto setFiltro={setFiltro} />
     </HeaderStyled>
   )
 }
