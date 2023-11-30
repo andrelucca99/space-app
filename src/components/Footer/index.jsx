@@ -1,0 +1,41 @@
+import { styled } from "styled-components";
+import BotaoIcon from "../BotaoIcon";
+
+const FooterStyled = styled.footer`
+  max-width: 100%;
+  height: 80px;
+  background-color: #04244f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 0 20px;
+`;
+
+const SociaisStyled = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+`;
+
+const TextFooter = styled.p`
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+`;
+
+const Footer = () => {
+  return (
+    <FooterStyled>
+      <SociaisStyled>
+        <BotaoIcon><img src="/imagens/sociais/facebook.svg" alt="Icone do facebook" /></BotaoIcon>
+        <BotaoIcon><img src="/imagens/sociais/twitter.svg" alt="Icone do twitter" /></BotaoIcon>
+        <BotaoIcon><img src="/imagens/sociais/instagram.svg" alt="Icone do instagram" /></BotaoIcon>
+      </SociaisStyled>
+      <TextFooter>Desenvolvido por Alura.</TextFooter>
+    </FooterStyled>
+  )
+}
+
+export default Footer;
