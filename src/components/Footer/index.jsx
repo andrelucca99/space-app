@@ -34,7 +34,7 @@ const Footer = () => {
         <BotaoIcon><img src="/imagens/sociais/twitter.svg" alt="Icone do twitter" /></BotaoIcon>
         <BotaoIcon><img src="/imagens/sociais/instagram.svg" alt="Icone do instagram" /></BotaoIcon>
       </SociaisStyled>
-      <TextFooter>Desenvolvido por Alura.</TextFooter>
+      <TextFooter>Desenvolvido por André lucas.</TextFooter>
     </FooterStyled>
   )
 }
